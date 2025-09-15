@@ -1,0 +1,17 @@
+
+# Firebase
+firebase-config.js
+*.firebase.*
+
+# Backups
+backups/
+*.bak
+
+# Dependencies
+node_modules/
+
+# IDE / System
+.idx/
+.idea/
+.vscode/
+.DS_Store

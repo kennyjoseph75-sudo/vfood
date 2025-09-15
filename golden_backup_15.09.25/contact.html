@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vfood - Contact Us</title>
+    <link rel="stylesheet" href="style.css?v=25">
+    <style>
+        .contact-hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background-color: #f5f5f5;
+        }
+        .contact-hero h1 {
+            font-family: 'Archivo Black', sans-serif;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .contact-hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .contact-body {
+            display: flex;
+            gap: 2rem;
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .contact-form {
+            flex-grow: 1;
+        }
+        .contact-details {
+            width: 40%;
+        }
+        input[type=text], input[type=email], textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        button[type=submit] {
+            background-color: #5a733c;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .map-placeholder {
+            background-color: #e0e0e0;
+            border-radius: 8px;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #757575;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <main-navigation></main-navigation>
+
+    <header class="contact-hero">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you. Whether you have a question about our services, pricing, or anything else, our team is ready to answer all your questions.</p>
+    </header>
+
+    <section class="contact-body">
+        <div class="contact-form">
+            <h2>Send us a message</h2>
+            <form action="#">
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <input type="email" id="email" name="email" placeholder="Your email..">
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="contact-details">
+            <h2>Contact Information</h2>
+            <p><strong>Email:</strong> info@vfood.com</p>
+            <p><strong>Phone:</strong> +254 712 345 678</p>
+            <p><strong>Address:</strong> 123 Vfood Lane, Nairobi, Kenya</p>
+            <div class="map-placeholder">
+                <span>Map Playground</span>
+            </div>
+        </div>
+    </section>
+
+    <site-footer></site-footer>
+
+    <script src="nav.js" type="module"></script>
+    <script src="glow-card.js"></script>
+    <script src="footer.js" type="module"></script>
+</body>
+</html>

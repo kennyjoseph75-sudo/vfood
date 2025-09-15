@@ -1,11 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-
-@font-face {
-    font-family: 'Kristal';
-    src: url('fonts/Kristal.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Archivo+Black&display=swap');
 
 :root {
     --left-bg-color: #5a733c;
@@ -28,10 +21,6 @@ body {
     margin: 0;
     background-color: #f0f0f0;
     color: #333;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Kristal', sans-serif;
 }
 
 .mouse-avocado {
@@ -98,6 +87,7 @@ body.landing-page {
 }
 
 .split h2 {
+    font-family: 'Archivo Black', sans-serif;
     font-size: 3rem;
     margin-bottom: 0; 
     position: relative;
@@ -106,6 +96,7 @@ body.landing-page {
 
 .split h3 {
     font-size: 2.2rem; 
+    text-transform: capitalize;
     font-weight: 400;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
@@ -133,10 +124,6 @@ body.landing-page {
     text-transform: uppercase;
     border-radius: 5px;
     transition: all var(--speed) cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-a.button span.brand-name {
-    text-transform: none !important;
 }
 
 .split.left .button:hover {
@@ -214,14 +201,4 @@ main-navigation ul li a {
 
 main-navigation ul li {
     margin: 0 1rem;
-}
-
-.vfood-container {
-    padding: 2rem;
-}
-
-pre {
-    background-color: #eee;
-    padding: 1rem;
-    border-radius: 5px;
 }
