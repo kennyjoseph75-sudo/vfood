@@ -10,7 +10,6 @@ class GlowCard extends HTMLElement {
                     --glow-color-1: #9EF01A; /* Lime Green */
                     --glow-color-2: #FACC15; /* Golden Orange */
                     display: block; /* The component itself should be a block-level element */
-                    perspective: 1000px;
                 }
 
                 .card {
