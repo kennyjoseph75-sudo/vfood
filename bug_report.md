@@ -1,4 +1,4 @@
-# Bug Report
+# Bug Report and outstanding job
 
 ## Issue: Button Text Capitalization
 
@@ -13,3 +13,6 @@ The text "Vfood" within the main landing page buttons is incorrectly being displ
 
 **Next Steps:**
 - This issue needs to be resolved before the production delivery of the website.
+
+# Things to do
+1. Terms and Conditions

@@ -1,10 +1,10 @@
 const footerTemplate = document.createElement('template');
 footerTemplate.innerHTML = `
   <style>
-    /* Import Google Fonts */
+    /* Import Google Fonts & Font Awesome */
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
 
-    /* Define local font */
     @font-face {
       font-family: 'Braven';
       src: url('fonts/Braven/BravenRegular.woff2') format('woff2'),
@@ -14,137 +14,200 @@ footerTemplate.innerHTML = `
       font-style: normal;
     }
 
-    /* Component-wide styles */
     :host {
       display: block;
-      font-family: 'Inter', sans-serif; /* Default font */
-      --vfood-green: #5a733c;
-      --vfood-cream: #EAE5E1;
-      --vfood-dark-gray: #282828;
-      --vfood-text-dark: #333;
+      --vfood-green: #5a733c; 
+      --vfood-white: #FFFFFF;
+      --vfood-light-gray: #f0f0f0;
+      --vfood-subtle-gray: #ccc;
     }
 
-    /* CONTACT BANNER SECTION */
-    .contact-banner {
-        max-width: 1200px;
-        margin: 4rem auto 2rem;
-        background-color: var(--vfood-green);
-        border-radius: 20px;
-        padding: 3rem 4rem;
-        display: grid;
-        grid-template-columns: 55% 45%;
-        align-items: center;
-        gap: 2rem;
+    .footer-container {
+      background-color: var(--vfood-green);
+      color: var(--vfood-white);
+      font-family: 'Inter', sans-serif;
+      padding: 5rem 3rem 0;
     }
 
-    .contact-banner-text-box {
-        color: white;
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 3rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      align-items: start;
     }
-
-    /* Apply 'Braven' font to the banner heading */
-    .contact-banner-text-box h2 {
-        font-family: 'Braven', sans-serif;
-        font-size: 3.2rem; /* Increased size for impact */
-        font-weight: normal;
-        line-height: 1.2;
-        margin: 0 0 1rem 0;
+    
+    /* Left Column: Brand Info */
+    .brand-image-container {
+        display: inline-block;
+        border-radius: 15px;
+        background-color: #5a733c;
+        margin-bottom: 1.5rem;
     }
-
-    .contact-banner-text-box p {
-        font-size: 1rem;
-        line-height: 1.6;
-        opacity: 0.9;
-        max-width: 450px;
-    }
-
-    .contact-banner-image img {
+    .brand-column .brand-image {
         width: 100%;
-        height: auto;
-        max-height: 300px;
-        object-fit: contain; /* Changed from cover to contain */
+        max-width: 250px;
         border-radius: 15px;
         display: block;
     }
+    .brand-column .brand-text {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        opacity: 0.9;
+        margin-bottom: 1.5rem;
+    }
 
-    /* MAIN FOOTER SECTION */
-    .main-footer {
-      background-color: var(--vfood-cream);
-      padding: 4rem 2rem 2rem;
-      max-width: 1200px;
-      margin: 0 auto;
+    /* Center & Right Columns */
+    .links-column h4, .hours-column h4 {
+        font-family: 'Braven', sans-serif;
+        font-size: 2rem;
+        font-weight: normal;
+        margin: 0 0 1.5rem 0;
+        color: var(--vfood-white);
     }
-    
-    .footer-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 2rem;
-      padding-bottom: 2rem;
-      border-bottom: 1px solid #ccc;
-    }
-    
-    /* Apply 'Braven' font to footer column headings */
-    .footer-column h4 {
-      font-family: 'Braven', sans-serif;
-      font-weight: normal; /* Braven doesn't need bold */
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-      color: var(--vfood-green);
-    }
-    
-    .footer-column ul { list-style: none; padding: 0; margin: 0; }
-    .footer-column ul li { margin-bottom: 0.75rem; }
-    .footer-column a { color: var(--vfood-text-dark); text-decoration: none; transition: color 0.3s; font-size: 0.9rem; }
-    .footer-column a:hover { color: var(--vfood-green); }
-    
-    .subscribe-form { display: flex; flex-direction: column; }
-    .subscribe-form input { padding: 0.8rem; border-radius: 8px; border: 1px solid #ccc; margin-bottom: 0.5rem; font-size: 1rem; font-family: 'Inter', sans-serif; }
-    .subscribe-form button { padding: 0.8rem; border-radius: 8px; border: none; background-color: var(--vfood-green); color: white; font-size: 1rem; cursor: pointer; transition: background-color 0.3s; font-family: 'Inter', sans-serif; }
-    .subscribe-form button:hover { background-color: #4a632c; }
-    
-    .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 1rem; }
-    .footer-logo img { height: 60px; }
-    .social-links a { color: var(--vfood-green); font-size: 1.5rem; margin-left: 1rem; text-decoration: none; transition: color 0.3s; }
-    .social-links a:hover { color: #4a632c; }
 
-    /* RESPONSIVE ADJUSTMENTS */
-    @media (max-width: 960px) {
-        .contact-banner {
+    .links-column ul { list-style: none; padding: 0; margin: 0; }
+    .links-column li { margin-bottom: 1rem; }
+    .links-column a {
+        color: var(--vfood-light-gray);
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    .links-column a:hover { color: var(--vfood-white); }
+
+    .hours-list { list-style: none; padding: 0; margin: 0; font-size: 0.9rem;}
+    .hours-list li {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .hours-list li span:last-child { color: var(--vfood-subtle-gray); }
+    .hours-list li.highlight span:last-child { color: #9AE6B4; font-weight: bold; }
+
+    /* Footer Bottom: Social Links & Logo */
+    .footer-socials {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 3rem auto 0;
+        padding: 2rem 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .social-links a {
+        color: var(--vfood-white);
+        font-size: 1.5rem;
+        margin: 0 0.75rem;
+        text-decoration: none;
+        transition: opacity 0.3s ease;
+    }
+    .social-links a:hover { opacity: 0.8; }
+
+    .footer-logo {
+        width: 120px;
+        height: auto;
+    }
+    
+    .footer-legal-bar {
+        background-color: #000;
+        color: var(--vfood-light-gray);
+        padding: 1.5rem 3rem;
+        text-align: center;
+    }
+    .footer-legal {
+        max-width: 1200px;
+        margin: 0 auto;
+        font-size: 0.8rem;
+        opacity: 0.8;
+    }
+    .footer-legal a, .footer-legal p {
+        color: var(--vfood-light-gray);
+        text-decoration: none;
+        margin: 0 0.5rem;
+        display: inline-block;
+    }
+    .footer-legal a:hover { color: var(--vfood-white); }
+
+    /* Responsive Adjustments */
+    @media (max-width: 992px) {
+        .footer-grid {
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .footer-container { padding: 4rem 1.5rem 0; }
+        .footer-grid {
             grid-template-columns: 1fr;
             text-align: center;
-             padding: 2.5rem;
         }
-        .contact-banner-image {
-            display: none;
+        .brand-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer-socials {
+            flex-direction: column;
+        }
+        .footer-logo {
+            margin-top: 1.5rem;
         }
     }
-    @media (max-width: 600px) {
-        .footer-bottom { flex-direction: column; }
-        .footer-logo { margin-bottom: 1rem; }
-        .contact-banner h2 { font-size: 2.5rem; }
-    }
+
   </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <footer class="footer-container">
-    <div class="contact-banner">
-        <div class="contact-banner-text-box">
-            <h2>Contact Vfood for Kenya's Freshest Produce</h2>
-            <p>A premium food company committed to offering value to food chains around the world. We are currently based in Kenya and the United Kingdom.</p>
-        </div>
-        <div class="contact-banner-image">
-            <img src="images/green avocado lady 3.jpg" alt="Woman holding an avocado over her eye">
-        </div>
-    </div>
-    <div class="main-footer">
+  <footer class="footer-wrapper">
+    <div class="footer-container">
       <div class="footer-grid">
-        <div class="footer-column"><h4>Useful Links</h4><ul><li><a href="./index.html">Home</a></li><li><a href="./about.html">About Us</a></li><li><a href="./contact.html">Contact Us</a></li><li><a href="./services.html">Services</a></li><li><a href="./privacy.html">Privacy Policy</a></li></ul></div>
-        <div class="footer-column"><h4>Careers</h4><ul><li><a href="#">Blog</a></li><li><a href="#">Press</a></li><li><a href="#">Partnerships</a></li><li><a href="#">Support</a></li><li><a href="#">Help Center</a></li></ul></div>
-        <div class="footer-column"><h4>Resources</h4><ul><li><a href="#">Events</a></li><li><a href="#">Community</a></li><li><a href="#">Social Media</a></li><li><a href="#">Newsletter</a></li><li><a href="#">Subscribe</a></li></ul></div>
-        <div class="footer-column"><h4>Subscribe</h4><p>Join our community to receive updates</p><form class="subscribe-form"><input type="email" placeholder="Enter your email"><button type="submit">Subscribe</button></form></div>
+        <div class="footer-column brand-column">
+            <div class="brand-image-container">
+                <img src="images/new green avocado lady 2.png" alt="Woman holding an avocado" class="brand-image">
+            </div>
+          <p class="brand-text">Vfood is a premium food food company that is committed to offering value to food chains around the world, from logistics to being an intermediary representative of other food companies around the world. We are currently based in Kenya and in the United kingdom.</p>
+        </div>
+        <div class="footer-column links-column">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./vfood-exports.html">Exports</a></li>
+            <li><a href="./vfood-imports.html">Imports</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-column hours-column">
+          <h4>Opening Hours</h4>
+          <ul class="hours-list">
+            <li><span>Monday</span><span>08:00-17:00</span></li>
+            <li><span>Tuesday</span><span>08:00-17:00</span></li>
+            <li><span>Wednesday</span><span>08:00-17:00</span></li>
+            <li><span>Thursday</span><span>08:00-17:00</span></li>
+            <li><span>Friday</span><span>08:00-17:00</span></li>
+            <li class="highlight"><span>Saturday</span><span>08:00-12:00</span></li>
+            <li><span>Sunday</span><span>We are closed</span></li>
+          </ul>
+        </div>
       </div>
-      <div class="footer-bottom">
-        <div class="footer-logo"><a href="./index.html"><img src="images/vfood logo.png" alt="Vfood Logo"></a></div>
-        <div class="social-links"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-tiktok"></i></a></div>
+      <div class="footer-socials">
+        <div class="social-links">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <img src="images/new Vlogo.png" alt="Vfood Logo" class="footer-logo">
       </div>
+    </div>
+    <div class="footer-legal-bar">
+        <div class="footer-legal">
+            <a href="./privacy.html">Privacy Policy</a>
+            <a href="./terms.html">Terms of Service</a>
+            <p>&copy; 2024 Vfood. All Rights Reserved.</p>
+        </div>
     </div>
   </footer>
 `;

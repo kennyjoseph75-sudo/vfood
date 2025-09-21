@@ -40,6 +40,10 @@ h1 {
     text-transform: uppercase;
 }
 
+.vfood-logo-text {
+    text-transform: none;
+}
+
 .mouse-avocado {
     position: fixed;
     top: 0;
@@ -95,12 +99,12 @@ body.landing-page {
 
 .split.left {
     left: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/background avocado lady.png') center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/white avocado lady.png') center/cover;
 }
 
 .split.right {
     right: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/KENYA family background.png') center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/Afro American girl and mum in kitchen.png') center/cover;
 }
 
 .split h2 {

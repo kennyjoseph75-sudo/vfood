@@ -314,3 +314,193 @@
 [error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
 [debug] [2025-09-20T10:55:31.968Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
 [debug] [2025-09-20T10:55:31.969Z] > authorizing via signed-in user (kennyjoseph75@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-09-21T13:26:37.760Z] Checked if tokens are valid: false, expires at: 1758369308815
+[debug] [2025-09-21T13:26:37.762Z] Checked if tokens are valid: false, expires at: 1758369308815
+[debug] [2025-09-21T13:26:37.764Z] > refreshing access token with scopes: []
+[debug] [2025-09-21T13:26:37.772Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-21T13:26:37.775Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-21T13:26:38.054Z] Checked if tokens are valid: false, expires at: 1758369308815
+[debug] [2025-09-21T13:26:38.059Z] Checked if tokens are valid: false, expires at: 1758369308815
+[debug] [2025-09-21T13:26:38.059Z] > refreshing access token with scopes: []
+[debug] [2025-09-21T13:26:38.060Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-21T13:26:38.066Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-21T13:26:38.083Z] Checked if tokens are valid: false, expires at: 1758369308815
+[debug] [2025-09-21T13:26:38.088Z] Checked if tokens are valid: false, expires at: 1758369308815
+[debug] [2025-09-21T13:26:38.088Z] > refreshing access token with scopes: []
+[debug] [2025-09-21T13:26:38.094Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-21T13:26:38.095Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-21T13:26:38.112Z] Checked if tokens are valid: false, expires at: 1758369308815
+[debug] [2025-09-21T13:26:38.112Z] Checked if tokens are valid: false, expires at: 1758369308815
+[debug] [2025-09-21T13:26:38.112Z] > refreshing access token with scopes: []
+[debug] [2025-09-21T13:26:38.116Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-21T13:26:38.116Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-21T13:26:38.125Z] Checked if tokens are valid: false, expires at: 1758369308815
+[debug] [2025-09-21T13:26:38.125Z] Checked if tokens are valid: false, expires at: 1758369308815
+[debug] [2025-09-21T13:26:38.125Z] > refreshing access token with scopes: []
+[debug] [2025-09-21T13:26:38.125Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-21T13:26:38.125Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-09-21T13:26:38.377Z] Checked if tokens are valid: false, expires at: 1758369308815
+[debug] [2025-09-21T13:26:38.378Z] Checked if tokens are valid: false, expires at: 1758369308815
+[debug] [2025-09-21T13:26:38.378Z] > refreshing access token with scopes: []
+[debug] [2025-09-21T13:26:38.379Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-21T13:26:38.379Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-21T13:26:38.383Z] Checked if tokens are valid: false, expires at: 1758369308815
+[debug] [2025-09-21T13:26:38.383Z] Checked if tokens are valid: false, expires at: 1758369308815
+[debug] [2025-09-21T13:26:38.383Z] > refreshing access token with scopes: []
+[debug] [2025-09-21T13:26:38.383Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-21T13:26:38.384Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-21T13:26:38.385Z] Checked if tokens are valid: false, expires at: 1758369308815
+[debug] [2025-09-21T13:26:38.385Z] Checked if tokens are valid: false, expires at: 1758369308815
+[debug] [2025-09-21T13:26:38.385Z] > refreshing access token with scopes: []
+[debug] [2025-09-21T13:26:38.386Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-21T13:26:38.386Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-21T13:26:38.389Z] Checked if tokens are valid: false, expires at: 1758369308815
+[debug] [2025-09-21T13:26:38.389Z] Checked if tokens are valid: false, expires at: 1758369308815
+[debug] [2025-09-21T13:26:38.389Z] > refreshing access token with scopes: []
+[debug] [2025-09-21T13:26:38.390Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-21T13:26:38.390Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-21T13:26:38.393Z] Checked if tokens are valid: false, expires at: 1758369308815
+[debug] [2025-09-21T13:26:38.393Z] Checked if tokens are valid: false, expires at: 1758369308815
+[debug] [2025-09-21T13:26:38.394Z] > refreshing access token with scopes: []
+[debug] [2025-09-21T13:26:38.394Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-21T13:26:38.394Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-21T13:26:38.439Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-21T13:26:38.440Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-21T13:26:38.464Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/ [none]
+[debug] [2025-09-21T13:26:38.464Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/ x-goog-quota-user=projects/vfood-prod
+[debug] [2025-09-21T13:26:38.471Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-21T13:26:38.472Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-21T13:26:38.488Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-09-21T13:26:38.489Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/vfood-prod
+[debug] [2025-09-21T13:26:38.494Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-21T13:26:38.494Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-21T13:26:38.503Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/ [none]
+[debug] [2025-09-21T13:26:38.503Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/ x-goog-quota-user=projects/vfood-prod
+[debug] [2025-09-21T13:26:38.516Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-21T13:26:38.516Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-21T13:26:38.531Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-09-21T13:26:38.531Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/vfood-prod
+[debug] [2025-09-21T13:26:38.535Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-21T13:26:38.536Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-21T13:26:38.551Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebaseio.com [none]
+[debug] [2025-09-21T13:26:38.551Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebaseio.com x-goog-quota-user=projects/vfood-prod
+[debug] [2025-09-21T13:26:38.567Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-21T13:26:38.567Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-21T13:26:38.583Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-09-21T13:26:38.583Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/vfood-prod
+[debug] [2025-09-21T13:26:38.592Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-21T13:26:38.593Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-21T13:26:38.601Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-09-21T13:26:38.602Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/vfood-prod
+[debug] [2025-09-21T13:26:38.642Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-21T13:26:38.643Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-21T13:26:38.655Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-09-21T13:26:38.655Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/vfood-prod
+[debug] [2025-09-21T13:26:38.672Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-21T13:26:38.674Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-21T13:26:38.686Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebaseio.com [none]
+[debug] [2025-09-21T13:26:38.686Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebaseio.com x-goog-quota-user=projects/vfood-prod
+[debug] [2025-09-21T13:26:38.689Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-21T13:26:38.689Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-21T13:26:38.697Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-09-21T13:26:38.698Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/vfood-prod
+[debug] [2025-09-21T13:26:39.255Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebaseio.com 403
+[debug] [2025-09-21T13:26:39.255Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebaseio.com [omitted]
+[debug] [2025-09-21T13:26:39.320Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-09-21T13:26:39.321Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-09-21T13:26:39.362Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebaseio.com 403
+[debug] [2025-09-21T13:26:39.362Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebaseio.com [omitted]
+[debug] [2025-09-21T13:26:39.383Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-09-21T13:26:39.383Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2025-09-21T13:26:39.388Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-09-21T13:26:39.388Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-09-21T13:26:39.389Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-09-21T13:26:39.389Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2025-09-21T13:26:39.418Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-09-21T13:26:39.419Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-09-21T13:26:39.471Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-09-21T13:26:39.475Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-09-21T13:26:39.532Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/ 200
+[debug] [2025-09-21T13:26:39.532Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/ [omitted]
+[debug] [2025-09-21T13:26:39.646Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/ 200
+[debug] [2025-09-21T13:26:39.646Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/ [omitted]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-09-21T13:26:39.654Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-09-21T13:26:39.654Z] > authorizing via signed-in user (kennyjoseph75@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-09-21T13:26:59.326Z] Checked if tokens are valid: true, expires at: 1758464797689
+[debug] [2025-09-21T13:26:59.329Z] Checked if tokens are valid: true, expires at: 1758464797689
+[debug] [2025-09-21T13:26:59.332Z] Checked if tokens are valid: true, expires at: 1758464797689
+[debug] [2025-09-21T13:26:59.332Z] Checked if tokens are valid: true, expires at: 1758464797689
+[debug] [2025-09-21T13:26:59.335Z] Checked if tokens are valid: true, expires at: 1758464797689
+[debug] [2025-09-21T13:26:59.336Z] Checked if tokens are valid: true, expires at: 1758464797689
+[debug] [2025-09-21T13:26:59.336Z] Checked if tokens are valid: true, expires at: 1758464797689
+[debug] [2025-09-21T13:26:59.337Z] Checked if tokens are valid: true, expires at: 1758464797689
+[debug] [2025-09-21T13:26:59.337Z] Checked if tokens are valid: true, expires at: 1758464797689
+[debug] [2025-09-21T13:26:59.338Z] Checked if tokens are valid: true, expires at: 1758464797689
+[debug] [2025-09-21T13:26:59.341Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/ [none]
+[debug] [2025-09-21T13:26:59.341Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/ x-goog-quota-user=projects/vfood-prod
+[debug] [2025-09-21T13:26:59.540Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-09-21T13:26:59.540Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/vfood-prod
+[debug] [2025-09-21T13:26:59.544Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-09-21T13:26:59.544Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/vfood-prod
+[debug] [2025-09-21T13:26:59.551Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-09-21T13:26:59.552Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/vfood-prod
+[debug] [2025-09-21T13:26:59.554Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebaseio.com [none]
+[debug] [2025-09-21T13:26:59.555Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebaseio.com x-goog-quota-user=projects/vfood-prod
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-09-21T13:26:59.673Z] Checked if tokens are valid: true, expires at: 1758464797689
+[debug] [2025-09-21T13:26:59.675Z] Checked if tokens are valid: true, expires at: 1758464797689
+[debug] [2025-09-21T13:26:59.675Z] Checked if tokens are valid: true, expires at: 1758464797689
+[debug] [2025-09-21T13:26:59.675Z] Checked if tokens are valid: true, expires at: 1758464797689
+[debug] [2025-09-21T13:26:59.678Z] Checked if tokens are valid: true, expires at: 1758464797689
+[debug] [2025-09-21T13:26:59.678Z] Checked if tokens are valid: true, expires at: 1758464797689
+[debug] [2025-09-21T13:26:59.678Z] Checked if tokens are valid: true, expires at: 1758464797689
+[debug] [2025-09-21T13:26:59.679Z] Checked if tokens are valid: true, expires at: 1758464797689
+[debug] [2025-09-21T13:26:59.679Z] Checked if tokens are valid: true, expires at: 1758464797689
+[debug] [2025-09-21T13:26:59.679Z] Checked if tokens are valid: true, expires at: 1758464797689
+[debug] [2025-09-21T13:26:59.679Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/ [none]
+[debug] [2025-09-21T13:26:59.679Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/ x-goog-quota-user=projects/vfood-prod
+[debug] [2025-09-21T13:26:59.682Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-09-21T13:26:59.682Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/vfood-prod
+[debug] [2025-09-21T13:26:59.685Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-09-21T13:26:59.685Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/vfood-prod
+[debug] [2025-09-21T13:26:59.687Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-09-21T13:26:59.688Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/vfood-prod
+[debug] [2025-09-21T13:26:59.690Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebaseio.com [none]
+[debug] [2025-09-21T13:26:59.690Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebaseio.com x-goog-quota-user=projects/vfood-prod
+[debug] [2025-09-21T13:26:59.842Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebaseio.com 403
+[debug] [2025-09-21T13:26:59.842Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebaseio.com [omitted]
+[debug] [2025-09-21T13:27:00.337Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebaseio.com 403
+[debug] [2025-09-21T13:27:00.338Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebaseio.com [omitted]
+[debug] [2025-09-21T13:27:00.380Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-09-21T13:27:00.381Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-09-21T13:27:00.397Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-09-21T13:27:00.397Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2025-09-21T13:27:00.404Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-09-21T13:27:00.404Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-09-21T13:27:00.414Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/ 200
+[debug] [2025-09-21T13:27:00.415Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/ [omitted]
+[debug] [2025-09-21T13:27:00.455Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-09-21T13:27:00.458Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-09-21T13:27:00.460Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-09-21T13:27:00.461Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-09-21T13:27:00.478Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-09-21T13:27:00.479Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/firebasedataconnect.googleapis.com [omitted]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-09-21T13:27:00.487Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-09-21T13:27:00.493Z] > authorizing via signed-in user (kennyjoseph75@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-09-21T13:27:00.516Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-09-21T13:27:00.516Z] > authorizing via signed-in user (kennyjoseph75@gmail.com)
+[debug] [2025-09-21T13:27:00.568Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/ 200
+[debug] [2025-09-21T13:27:00.569Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/vfood-prod/services/ [omitted]
