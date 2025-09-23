@@ -295,7 +295,7 @@ template.innerHTML = `
     <div class="nav-links">
         <div class="mobile-logo">
             <a href="./index.html">
-                <img src="images/vfood logo.png" alt="Vfood Logo">
+                <img src="/images/new Vlogo.png" alt="Vfood Logo">
             </a>
         </div>
         <ul>
@@ -324,7 +324,7 @@ template.innerHTML = `
     </div>
     <div class="logo-container">
         <a href="./index.html" class="logo">
-            <img src="images/vfood logo.png" alt="Vfood Logo">
+            <img src="/images/new Vlogo.png" alt="Vfood Logo">
         </a>
     </div>
   </div>

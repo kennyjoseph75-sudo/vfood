@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,6 +44,9 @@
                     </div>
                     <button type="submit" class="cta-button">Submit</button>
                 </form>
+                <div id="success-message" style="display: none; margin-top: 20px; padding: 15px; background-color: #4CAF50; color: white; border-radius: 8px;">
+                  Thank you for your message! We will get back to you soon.
+                </div>
             </div>
             <div class="image-container">
                 <img src="/images/Contact-Page/avocado 2.png" alt="A fresh avocado, representing the quality of Vfood's produce.">
@@ -62,7 +66,7 @@
                         <i class="fas fa-map-marker-alt"></i>
                         <span>VFood Industries Ltd. Unifilters Godown No 5 | North Airport Road</span>
                     </div>
-                    <div class="contact-info-item">
+                    <div class.bind="contact-info-item">
                         <i class="fas fa-phone"></i>
                         <span>+254 721 666 008</span>
                     </div>
@@ -94,5 +98,7 @@
 
     <script src="/nav.js?v=1758432505" type="module"></script>
     <script src="/footer.js?v=1758432505" type="module"></script>
+    <script src="firebase-init.js" type="module"></script>
+    <script src="contact-form.js" type="module"></script>
 </body>
 </html>

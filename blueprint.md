@@ -47,6 +47,8 @@ To list files, you MUST use the `ls -R` terminal command. The `list_files` tool 
 
 ## Current Features
 
+*   **Global CTA Button:** A reusable button class (`.cta-button`) for call-to-action buttons across the site. It features a light-grey resting state with a dot icon, which transitions to a black button with a circular arrow icon on hover.
+*   **Responsive Contact Form:** A new section on the `contact.html` page featuring a modern, two-column layout. It includes a user-friendly form on the left and a visually appealing image on the right, all on a light beige background. The section is fully responsive.
 *   **Landing Page Decision Gate:** A full-bleed, 50/50 split-screen hero on the landing page that directs users to "Exports" or "Imports." It features large, impactful text, background images, and interactive hover effects on desktop. On mobile, the panels stack vertically for a clear, responsive experience.
 *   **Responsive Navigation:** A custom web component (`main-navigation`) that provides clear navigation across the site. It features a hamburger menu on mobile that includes a scrolling panel to accommodate all links.
 *   **Careers Page:** A dedicated `careers.html` page with a dynamic and visually appealing design. The page includes a "Why Join Us" section with styled cards and an "Open Positions" section with interactive accordion elements. The page is fully responsive.
@@ -54,7 +56,25 @@ To list files, you MUST use the `ls -R` terminal command. The `list_files` tool 
 *   **Multi-page Architecture:** Separate, linked HTML files for different sections of the site.
 *   **Firebase Hosting:** The application is configured for and deployed to Firebase Hosting.
 
+
 ## Development History
+
+### Contact Form and Global Button Corrections
+*   **Reason:** To correct styling issues on the contact page and finalize the implementation of the global CTA button.
+*   **Changes:**
+    *   Updated the `h1` font on the contact page hero to use the 'Montserrat' font for a consistent, modern look (`contact.css`).
+    *   Corrected and finalized the CSS for the `.cta-button` class in `style.css`, ensuring the hover transition and icon swap (dot to arrow) works as designed.
+    *   Confirmed the contact form button reads "Submit" and properly uses the `.cta-button` class (`contact.html`).
+
+### Contact Form Implementation
+*   **Reason:** To provide users with a clear and modern way to get in touch with Vfood.
+*   **Changes:**
+    *   Added a new "Contact Form" section to `contact.html`.
+    *   The section uses a two-column layout: a form on the left and an image on the right.
+    *   The form includes fields for "Your name," "Email," "Subject," and "Message."
+    *   The image was updated to `/images/Contact-Page/avocado 2.png`.
+    *   Created extensive new styles in `contact.css` to define the layout, colors, fonts, and responsiveness of the form and its container.
+    *   The section is fully responsive, stacking the columns on smaller screens for better usability.
 
 ### Backup Milestone: Footer Image and Logo Fixes
 *   **Reason:** Project milestone reached. The footer logo and background image have been successfully updated and are displaying correctly.
