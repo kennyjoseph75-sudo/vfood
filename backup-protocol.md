@@ -15,14 +15,14 @@ This document outlines the standard procedure for creating a backup of the proje
 The following terminal command is the **only** approved method for creating a manual backup:
 
 ```
-TZ=GMT zip -r vfood-backup_$(date +%d-%m-%Y:%H-%M-%S).zip . -x "*.zip"
+TZ=GMT zip -r backups/vfood-backup_$(date +%d-%m-%Y:%H-%M-%S).zip . -x "*.zip"
 ```
 
 ### Command Breakdown:
 
 *   `TZ=GMT`: Sets the timezone to Greenwich Mean Time for the command.
 *   `zip -r`: Creates a recursive ZIP archive.
-*   `vfood-backup_$(date +%d-%m-%Y:%H-%M-%S).zip`: Names the archive with the prefix "vfood-backup_" followed by the current date and time in `DD-MM-YYYY:HH-MM-SS` format (GMT).
+*   `backups/vfood-backup_$(date +%d-%m-%Y:%H-%M-%S).zip`: Names the archive with the prefix "vfood-backup_" and places it inside the `backups/` directory, followed by the current date and time in `DD-MM-YYYY:HH-MM-SS` format (GMT).
 *   `.`: Specifies that the contents of the current directory should be archived.
 *   `-x "*.zip"`: Excludes any existing files ending with the `.zip` extension from the new backup archive. This prevents backups from containing previous backups.
 

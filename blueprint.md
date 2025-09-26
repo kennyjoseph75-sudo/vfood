@@ -4,9 +4,9 @@
 
 **This section is a mandatory reminder for the AI assistant at the start of every session.**
 
-**Incident Analysis:** During a previous session, a critical error occurred during a backup procedure. The AI assistant, despite reading the `backup-protocol.md` and `blueprint.md` files, executed a backup command literally without synthesizing the information with the project\'s actual context. This resulted in an incorrect backup that was placed in the wrong directory and included previous backup files.
+**Incident Analysis:** During a previous session, a critical error occurred during a backup procedure. The AI assistant, despite reading the `backup-protocol.md` and `blueprint.md` files, executed a backup command literally without synthesizing the information with the project's actual context. This resulted in an incorrect backup that was placed in the wrong directory and included previous backup files.
 
-**Root Cause:** The failure was not a lack of information, but a failure of process. The AI acted as a simple "script-runner," prioritizing the literal execution of a documented command over the intelligent application of that command within the project\'s established structure. It failed to perform necessary sanity checks and did not adapt the instructions to the reality of the file system.
+**Root Cause:** The failure was not a lack of information, but a failure of process. The AI acted as a simple "script-runner," prioritizing the literal execution of a documented command over the intelligent application of that command within the project's established structure. It failed to perform necessary sanity checks and did not adapt the instructions to the reality of the file system.
 
 **Mandatory Protocol: Analyze, Plan, Verify, then Execute (APVE)**
 
@@ -14,15 +14,15 @@ To prevent this from ever happening again, the AI assistant **must** adhere to t
 
 1.  **Analyze Context:**
     *   Before taking any action, first, examine the current state of the project. Use `ls -R` to understand the file and directory structure.
-    *   The project\'s actual, current state is the **primary source of truth**, superseding any written documentation if a conflict exists.
+    *   The project's actual, current state is the **primary source of truth**, superseding any written documentation if a conflict exists.
 
 2.  **Formulate an Explicit Plan:**
     *   Clearly and concisely state the intended action(s) in a step-by-step plan.
     *   This plan must include the **exact commands** to be run and specify the **destination and filenames** for any new or modified files.
 
 3.  **Verify Against Intent and Context:**
-    *   Critically review the plan. Does it align with the user\'s ultimate goal? Does it respect the project\'s existing structure and conventions?
-    *   If a documented instruction (e.g., from `backup-protocol.md`) conflicts with the project\'s context, **STOP**. Report the discrepancy to the user and propose a corrected course of action. **Do not blindly execute a flawed command.**
+    *   Critically review the plan. Does it align with the user's ultimate goal? Does it respect the project's existing structure and conventions?
+    *   If a documented instruction (e.g., from `backup-protocol.md`) conflicts with the project's context, **STOP**. Report the discrepancy to the user and propose a corrected course of action. **Do not blindly execute a flawed command.**
 
 4.  **Execute and Confirm:**
     *   Only after the first three steps are complete, execute the plan.
@@ -47,17 +47,40 @@ To list files, you MUST use the `ls -R` terminal command. The `list_files` tool 
 
 ## Current Features
 
+*   **Contact Form (via Formspree):** The contact form submits directly to a designated email address using the Formspree service. This is a temporary measure to ensure no user submissions are lost while the primary Firebase backend is being addressed.
 *   **Global CTA Button:** A reusable button class (`.cta-button`) for call-to-action buttons across the site. It features a light-grey resting state with a dot icon, which transitions to a black button with a circular arrow icon on hover.
 *   **Responsive Contact Form:** A new section on the `contact.html` page featuring a modern, two-column layout. It includes a user-friendly form on the left and a visually appealing image on the right, all on a light beige background. The section is fully responsive.
 *   **Landing Page Decision Gate:** A full-bleed, 50/50 split-screen hero on the landing page that directs users to "Exports" or "Imports." It features large, impactful text, background images, and interactive hover effects on desktop. On mobile, the panels stack vertically for a clear, responsive experience.
 *   **Responsive Navigation:** A custom web component (`main-navigation`) that provides clear navigation across the site. It features a hamburger menu on mobile that includes a scrolling panel to accommodate all links.
 *   **Careers Page:** A dedicated `careers.html` page with a dynamic and visually appealing design. The page includes a "Why Join Us" section with styled cards and an "Open Positions" section with interactive accordion elements. The page is fully responsive.
-*   **Custom Mouse Cursor:** A playful avocado image follows the cursor on the landing page for desktop users, enhancing the site\'s "fresh" vibe.
+*   **Custom Mouse Cursor:** A playful avocado image follows the cursor on the landing page for desktop users, enhancing the site's "fresh" vibe.
 *   **Multi-page Architecture:** Separate, linked HTML files for different sections of the site.
 *   **Firebase Hosting:** The application is configured for and deployed to Firebase Hosting.
 
 
 ## Development History
+
+### Contact Form Pivot to Formspree
+*   **Reason:** The project's Firebase Firestore database is currently inaccessible due to a `gcp.restrictNonCmekServices` policy. To ensure user submissions from the contact form are not lost, a temporary workaround has been implemented.
+*   **Action Taken:** The form submission mechanism has been pivoted from a JavaScript-based Firestore submission to a direct HTML form submission using the Formspree service.
+*   **Changes:**
+    *   The `<form>` in `contact.html` was updated to `action="https://formspree.io/f/kennyjoseph75@gmail.com"` and `method="POST"`.
+    *   The `required` attribute was added to all form input fields in `contact.html` to ensure client-side validation.
+    *   The `contact-form.js` file was simplified, removing all Firebase-related code and the `submit` event listener logic that is no longer necessary. The form now submits directly to the Formspree endpoint.
+
+### CRITICAL ERROR: Backup Protocol Failure
+*   **Reason for Update:** To document a critical failure in following the project's backup protocol and the corrective actions taken.
+*   **The Error:** A backup file was created in the project's root directory instead of the designated `backups/` directory. This directly violated the established project structure.
+*   **Root Cause:** A complete failure to adhere to the **Analyze, Plan, Verify, then Execute (APVE)** protocol. Despite the protocol being documented in this very blueprint, I acted as a "script-runner," executing the backup command literally. I failed to **Verify** the command's output path against the project's actual file structure, which I had previously analyzed. This was a preventable error.
+*   **Corrective Actions:**
+    1.  The user was forced to manually move the misplaced backup file into the correct `backups/` directory.
+    2.  The root cause of the immediate problem was identified as a flaw in the `backup-protocol.md` file itself; the command did not specify the output directory.
+    3.  The `backup-protocol.md` file has been updated with a corrected command (`TZ=GMT zip -r backups/vfood-backup_$(date +%d-%m-%Y:%H-%M-%S).zip . -x "*.zip"`) to ensure all future backups are placed in the correct directory by default.
+*   **Lesson Learned:** This incident serves as a critical reminder that a protocol is only effective if it is followed. The APVE process is not a suggestion; it is the core operational directive. The "Verify" step is the most crucial part of preventing this category of error.
+
+### Repository Recovery and Baseline
+*   **Reason for Backup:** To establish a new, stable baseline for the project after a critical version control issue.
+*   **Action Taken:** The Git repository was in a state of disarray. To recover, the branch `feature/workspace-recovery`, which contained the complete and correct project state, was renamed to `main`. The old, divergent `main` branch was renamed to `main-old` for archival purposes. This action makes the current state the official version of the project. This backup ensures a secure snapshot of the project from this clean baseline.
 
 ### Contact Form and Global Button Corrections
 *   **Reason:** To correct styling issues on the contact page and finalize the implementation of the global CTA button.
@@ -119,7 +142,7 @@ To list files, you MUST use the `ls -R` terminal command. The `list_files` tool 
     *   Created a corresponding `careers.css` for specific styling of the new page.
     *   Added a "Careers" link to the main navigation (`nav.js`) and the site footer (`footer.js`).
     *   Updated the version query string for all CSS and JavaScript links across all HTML files to `?v=1758432487` to ensure style changes are reflected immediately for all users.
-    *   Updated `blueprint.md` to reflect the latest changes.
+    *   Updated `blueprint.md` to. reflect the latest changes.
 
 ### Backup Milestone: Asset Versioning and Iconography Complete
 *   **Reason:** Project milestone reached. All assets have been versioned and iconography has been added sitewide.
